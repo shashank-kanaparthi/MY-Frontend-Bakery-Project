@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Golden Crust Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html"><h2>SK Bakers</h2></a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for custom orders, questions, or to schedule a visit</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+<section class="contact-info-section">
+    <div class="container">
+        <div class="contact-info-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Visit Our Bakery</h3>
+                <p>7-108 President Street<br>Vijayawada, City 521225</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <h3>Call Us</h3>
+                <p><strong>+91 8185893560</strong></p>
+                <p>Monday - Saturday: 6:00 AM - 8:00 PM<br>Sunday: 7:00 AM - 6:00 PM</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email Us</h3>
+                <p><strong>info@goldencrust.com</strong></p>
+                <p>For custom orders:<br><strong>orders@goldencrust.com</strong></p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i> </a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i> </a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i> </a>
+                </div>
+                <p>Follow for daily updates and special offers!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Forms -->
+    <section class="contact-forms">
+        <div class="container">
+            <div class="forms-grid">
+                <!-- General Inquiry Form -->
+                <div class="form-section">
+                    <h2>General Inquiry</h2>
+                    <p>Have a question or want to learn more about our services?</p>
+                    <form class="contact-form" id="general-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Question</option>
+                                <option value="hours">Store Hours & Location</option>
+                                <option value="employment">Employment Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Custom Order Form -->
+                <div class="form-section">
+                    <h2>Custom Order Request</h2>
+                    <p>Ready to place a custom order? Fill out the details below for a quote.</p>
+                    <form class="contact-form" id="order-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name *</label>
+                                <input type="text" id="customer-name" name="customer-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-email">Email Address *</label>
+                                <input type="email" id="customer-email" name="customer-email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number *</label>
+                                <input type="tel" id="customer-phone" name="customer-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Event Date</label>
+                                <input type="date" id="event-date" name="event-date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-type">Order Type *</label>
+                            <select id="order-type" name="order-type" required>
+                                <option value="">Select order type</option>
+                                <option value="wedding-cake">Wedding Cake</option>
+                                <option value="birthday-cake">Birthday Cake</option>
+                                <option value="custom-cake">Custom Celebration Cake</option>
+                                <option value="cupcakes">Cupcakes</option>
+                                <option value="cookies">Custom Cookies</option>
+                                <option value="bread">Bread Orders</option>
+                                <option value="catering">Event Catering</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guest-count">Number of Guests</label>
+                                <input type="number" id="guest-count" name="guest-count" min="1" placeholder="Approximate number">
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-100">Under $100</option>
+                                    <option value="100-250">$100 - $250</option>
+                                    <option value="250-500">$250 - $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="over-1000">Over $1,000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-details">Order Details *</label>
+                            <textarea id="order-details" name="order-details" rows="5" required placeholder="Please describe your vision, including flavors, colors, themes, dietary restrictions, etc."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="consultation" value="yes">
+                                I would like to schedule an in-person consultation
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="business-hours">
+        <div class="container">
+            <div class="section-header">
+                <h2>Business Hours & Information</h2>
+                <p>Plan your visit or pickup time</p>
+            </div>
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Regular Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item">
+                            <span class="day">Monday - Friday</span>
+                            <span class="time">6:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Saturday</span>
+                            <span class="time">6:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Sunday</span>
+                            <span class="time">7:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hours-card">
+                    <h3>Holiday Hours</h3>
+                    <p>We're closed on major holidays:</p>
+                    <ul>
+                        <li>New Year's Day</li>
+                        <li>Sunday's</li>
+                        <li>Telugu Festivals</li>
+                        <li>Christmas Day</li>
+                    </ul>
+                    <p><em>Modified hours may apply on holiday eves.</em></p>
+                </div>
+                <div class="hours-card">
+                    <h3>Special Services</h3>
+                    <div class="service-hours">
+                        <p><strong>Custom Order Consultations:</strong><br>By appointment only</p>
+                        <p><strong>Baking Classes:</strong><br>Saturdays 10:00 AM - 2:00 PM</p>
+                        <p><strong>Delivery Service:</strong><br>Tuesday - Saturday 10:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Parking -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2>Find Us Easily</h2>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <strong>Address:</strong>
+                            <p>7-108 President Street<br>Vijayawada, City 521225</p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Parking:</strong>
+                            <p>Free 2-hour street parking<br>Municipal parking garage across the street</p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Public Transport:</strong>
+                            <p>Bus routes 15, 22, 43<br>Metro station: Downtown Central (5-minute walk)</p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Accessibility:</strong>
+                            <p>Wheelchair accessible entrance<br>Accessible restroom facilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>Interactive Map</h3>
+                        <p>Located in the bustling downtown district, our bakery is surrounded by shops, restaurants, and cultural attractions.</p>
+                        <div class="nearby-landmarks">
+                            <h4>Nearby Landmarks:</h4>
+                            <ul>
+                                <li>City Hall (2 blocks north)</li>
+                                <li>Central Park (3 blocks east)</li>
+                                <li>Downtown Library (1 block south)</li>
+                                <li>Market Square (4 blocks west)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How far in advance should I place a custom order?</h3>
+                    <p>For custom cakes, we recommend 1-2 weeks notice. Wedding cakes and large events should be ordered 4-6 weeks in advance to ensure availability and proper planning time.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer delivery services?</h3>
+                    <p>Yes! We deliver within a 50-mile radius. Delivery fees start at $10 for local deliveries and vary based on distance and order size. Free delivery is available for orders over $200.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I schedule a tasting appointment?</h3>
+                    <p>Absolutely! We offer complimentary tastings for wedding cake orders over $500. Other tasting sessions are available for $25, which is credited toward your final order.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept cash, all major credit cards, and contactless payments. For large custom orders, we require a 50% deposit with the balance due upon pickup or delivery.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you accommodate dietary restrictions?</h3>
+                    <p>Yes! We offer gluten-free, vegan, sugar-free, and other specialty dietary options. Please mention any restrictions when placing your order so we can ensure safe preparation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I tour the bakery?</h3>
+                    <p>We love sharing our passion for baking! Tours can be arranged during off-peak hours. Please call ahead to schedule a time that works for both you and our baking schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <h2>Last-Minute Orders & Emergency Requests</h2>
+                <p>While we always recommend advance ordering, we understand that sometimes you need something special on short notice.</p>
+                <div class="emergency-info">
+                    <div class="emergency-item">
+                        <h3>Same-Day Availability</h3>
+                        <p>Call us before 10 AM for possible same-day cake orders (subject to availability and design complexity)</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Rush Order Fees</h3>
+                        <p>Rush orders may be subject to additional fees. We'll always provide clear pricing upfront.</p>
+                    </div>
+                    <div class="emergency-item">
+                        <h3>Emergency Hotline</h3>
+                        <p><strong>+91 8185893560</strong><br>Available during business hours for urgent requests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Something Delicious?</h2>
+                <p>Contact us today to discuss your custom order or visit our bakery to see our daily fresh selections</p>
+                <div class="cta-buttons">
+                    <a href="tel:+15551234567" class="btn btn-primary">Call Now</a>
+                    <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-section">
+        <h3>SK Bakers</h3>
+        <p>Fresh baked goods made with love since 2003</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="https://wa.me/918185893560" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>7-108 President Street<br>Vijayawada, City 521225</p>
+        <p>Phone: +91 8185893560</p>
+        <p>Email: SK Cakes@goldencrust.com</p>
+      </div>
+
+      <!-- Location Map -->
+      <div class="footer-section">
+        <h4>Our Location</h4>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.059084499514!2d80.6312248148671!3d16.506174788617857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f13c5567cdb7%3A0x345672eb0e32538f!2sVijayawada%2C%20Andhra%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1669451123456!5m2!1sen!2sin"
+            width="100%"
+            height="150"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 <span>SK Bakers</span>. All rights reserved. 
+        <br>
+        Made with <span class="heart">❤️</span> by 
+        <a href="#" target="_blank">Shashank.K</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/918185893560" 
+   class="floating-whatsapp" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Floating Back to Top Button -->
+<button id="floatingBackToTop" class="floating-back-to-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
